@@ -1,2 +1,1 @@
-# goit-markup-hw-06
-ДЗ N6
+https://pasichnik-v.github.io/goit-markup-hw-06/
