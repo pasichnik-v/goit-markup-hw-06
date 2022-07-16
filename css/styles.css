@@ -832,16 +832,21 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form {
     margin-top: 12px;
-    margin-bottom: 20px;
 }
 
 .modal-title {
 margin-bottom: 0;
 }
+.form-field {
+     margin-top: 10px;
+
+}
+.form-field:first-child {
+     margin-top: 0;
+}
 .form-field-label {
     display: block;
     width: 100%;
-    margin-top: 10px;
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -855,7 +860,7 @@ margin-bottom: 0;
 }
 .form-field-input {
     width: 100%;
-    padding: 11px 12px 11px 42px;
+    padding: 12px 12px 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     font-weight: 400;
@@ -882,7 +887,7 @@ margin-bottom: 0;
 
 .textarea {
     width: 100%;
-    padding: 12px 16px;
+    padding: 0;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -898,15 +903,16 @@ margin-bottom: 0;
     outline: none;
     color: var(--black-color); 
 }
+.textarea::placeholder {
+    padding: 12px 16px;
+}
 
 /* Чекбокс */
-/* .chekbox {
-    display: flex;
-    justify-content: center;
-} */
-.chekbox-label {
+.chekbox {
     margin-top: 20px;
     margin-bottom: 30px;
+}
+.chekbox-label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -962,9 +968,9 @@ margin-bottom: 0;
     display: flex;
     justify-content: center;
     margin: auto;
+    padding: 0;
     width: 200px;
     height: 50px;
-    /* padding: 10px 55px 10px 56px; */
     background-color: var(--accent-color);
     color: var(--full-white-color);
     text-align: center;
@@ -976,6 +982,7 @@ margin-bottom: 0;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
 .modal-close:hover,
 .modal-close:focus {
