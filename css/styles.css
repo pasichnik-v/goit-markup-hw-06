@@ -918,6 +918,8 @@ margin-bottom: 0;
 
 .chekbox-input {
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .chekbox-icon {
     display: inline-block;
